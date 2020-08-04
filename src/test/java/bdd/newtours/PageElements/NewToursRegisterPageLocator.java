@@ -43,4 +43,18 @@ public class NewToursRegisterPageLocator {
 
 	@FindBy(xpath="//input[@name='submit']")
 	public WebElement lnkSubmit;
+	
+	@FindBy(xpath="//input[@id='livesearch-imprint']")
+	public WebElement txtImprint;
+	
+	@FindBy(xpath="//select[@id='color-select']")
+	public WebElement txtColor;
+	
+	@FindBy(xpath="//select[@id='shape-select']")
+	public WebElement txtShape;
+	
+	@FindBy(xpath="//input[@class='ddc-btn btn-block']")
+	public WebElement lnkSearch;
+	
+	
 }

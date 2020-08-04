@@ -75,7 +75,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 3570859700,
+  "duration": 3074669600,
   "status": "passed"
 });
 formatter.scenario({
@@ -129,21 +129,21 @@ formatter.match({
   "location": "NewToursRegisterSteps.browse_to_Newtours_homepage()"
 });
 formatter.result({
-  "duration": 3497543500,
+  "duration": 3412926800,
   "status": "passed"
 });
 formatter.match({
   "location": "NewToursRegisterSteps.navigate_to_Register_page()"
 });
 formatter.result({
-  "duration": 1145034900,
+  "duration": 1011131900,
   "status": "passed"
 });
 formatter.match({
   "location": "NewToursRegisterSteps.fill_form_with_some_basic_information()"
 });
 formatter.result({
-  "duration": 3428527200,
+  "duration": 3387010800,
   "status": "passed"
 });
 formatter.match({
@@ -160,18 +160,18 @@ formatter.match({
   "location": "NewToursRegisterSteps.complete_creating_account_with(String,String)"
 });
 formatter.result({
-  "duration": 965976300,
+  "duration": 1142377500,
   "status": "passed"
 });
 formatter.match({
   "location": "NewToursRegisterSteps.verify_account_created_successfully()"
 });
 formatter.result({
-  "duration": 1055559500,
+  "duration": 2434181800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 126200,
+  "duration": 132500,
   "status": "passed"
 });
 });

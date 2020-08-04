@@ -1,5 +1,8 @@
 package bdd.stepDef;
 
+import bdd.drugs.HomePage.DrugsHomePage;
+import bdd.drugs.HomePage.DrugsPillPage;
+import bdd.happylark.PageActions.HappylarkHomePage;
 import bdd.newtours.PageActions.NewToursConfirmPageActions;
 import bdd.newtours.PageActions.NewToursRegisterPageActions;
 import bdd.newtours.PageActions.NewtoursHomePageActions;
@@ -12,9 +15,16 @@ public class NewToursRegisterSteps {
 	NewtoursHomePageActions NewtoursHomePageActionsObj = new NewtoursHomePageActions();
 	NewToursRegisterPageActions NewToursRegisterPageActionsObj = new NewToursRegisterPageActions();
 	NewToursConfirmPageActions NewToursConfirmPageActionsObj = new NewToursConfirmPageActions();
+	HappylarkHomePage HappylarkHomePageObj = new HappylarkHomePage();
+	DrugsHomePage DrugsHomePageObj = new DrugsHomePage();
+	DrugsPillPage DrugsPillPageObj = new DrugsPillPage();
+	
 	
 	@Given("^Browse to Newtours homepage$")
 	public void browse_to_Newtours_homepage() throws Throwable {
+		DrugsHomePageObj.PillIdentifier();
+		DrugsPillPageObj.enterinfo();
+		
 		NewtoursHomePageActionsObj.loadNewTourHomePage();
 	}
 
@@ -40,7 +50,10 @@ public class NewToursRegisterSteps {
 	@Then("^Verify account created successfully$")
 	public void verify_account_created_successfully() throws Throwable {
 		NewToursConfirmPageActionsObj.VerifyConfirmationPage();
-	}
+		
+		HappylarkHomePageObj.HoverOver();
+		
+			}
 
 
 }
